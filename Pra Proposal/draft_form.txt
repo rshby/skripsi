@@ -1,0 +1,38 @@
+Bidang Minat: Sistem Cerdas
+Topik Penelitian: Klasifikasi
+Bahasa pemrograman yang Dikuasai: Python, dll
+Skor : Pyhon-80, dll
+IPK: 3.76
+Usulan Calon Dospem: Mangaras
+Alasan: Karena Menurut saya, pak Mangaras mengerti dan ahli di bidang machine learning
+Karena menurut saya, pak Mangaras mengerti dan ahli dalam bidang Machine Learning. Sehingga dapat membimbing saya yang mengambil topik penelitian tersebut
+
+Assalamualaikum Wr Wb
+Selamat siang pak Awang, perkenalkan nama saya Reo Sahobby, mahasiswa Informatika angkatan 2017.
+Mohon maaf mengganggu waktunya pak. Saya kemarin sudah mengajukan pra proposal, dan Alhamdulillah sudah mendapat acc dari koordinator TA dan mendapat calon dosen pembimbing yaitu pak Novrido.
+Untuk itu, mohon izin pak saya ingin meminta tanda tangan pak Awang selaku koordinator TA pada formulir pra proposal.
+Terimakasih pak
+
+Assalamualaikum Wr Wb
+Selamat siang pak Novrido. Perkenalkan nama saya Reo Sahobby, mahasiswa Informatika angkatan 2017.
+Mohon maaf pak menganggu waktunya. Saya kemarin sudah mengajukan pra proposal, Alhamdullilah sudah mendapat acc oleh koordinator TA, dan mendapat calon dosen pembimbing yaitu pak Novrido
+
+Mohon izin pak Novrido, saya ingin meminta tanda tangan pak Novrido untuk formulir pra proposal
+Terimakasih pak
+
+baik pak terimakasih
+untuk tanda tangan bapak di formulir pra proposal bisa dimintakan online atau langsung besok sewaktu bimbingan ya pak?
+
+
+======================== Prediksi Penyakit Jantung ================================
+
+Datasets yang saya gunakan adalah data penyakit jantung yang dapat didapatkan di UCI machine learning. Data tersebut berjumlah 303 data, memiliki 13 features (X) seperti umur (age), jenis kelamin (sex), jenis nyeri dada (cp), kolesterol darah (chol), dll, dan memiliki 1 target (Y) num yang memiliki 2 klasifikasi, 0 dan 1, data tersebut adalah data hasil angiografi, 0 untuk klasifikasi penyempitan pembuluh darah <50% yang berarti masih aman, dan 1 adalah untuk penyempitan >50% yang berarti berpotensi terkena penyakit jantung. Dalam permasalah tersebut target atau goals penyelesaiannya adalah membuat model klasifikasi yang dapat memprediksi berdasarkan data dan model yang sudah dilatih, apakah seseorang tersebut berpotensi terkena penyakit jantung atau tidak. Dalam pembuatan model klasifikasi tersbut, saya memilih menggunakan algoritma XgBoost.
+
+Penerapan algoritma klasifikasi XgBoost diharapkan dapat mengatasi masalah efektifitas dan akurasi dalam mendeteksi penyakit jantung. Randomized Search Optimizer digunakan untuk mencari parameter terbaik yang bisa didapatkan dari model tersebut, sehingga model yang dibuat memiliki performa yang maksimal.
+
+Rencana yang akan saya lakukan adalah:
+Saya ingin membuat model klasifikasi dengan mentraining data tersebut dan melakukan prediksi pada data penyakit jantung apakah seseorang berpotensi terkena penyakit jantung atau tidak. Model yang akan dibuat, nantinya dibuat dengan menggunakan algoritma XgBoost dan menggunakan Randomized Search Optimizer untuk menemukan parameter terbaik. Kemudian melakukan pengujian pada model tersebut, yang nantinya dapat digunakan untuk mengetahui performa model tersebut seperti akurasi, presisi, recall, dan lain-lain.
+
+Rencana Rumusan Masalah:
+1. Apakah algoritma XgBoost dapat digunakan untuk menyelesaikan kasus prediksi penyakit jantung?
+2. Bagaimana tingkat akurasi model yang dibuat dengan algoritma XgBoost terhadap data tersebut?

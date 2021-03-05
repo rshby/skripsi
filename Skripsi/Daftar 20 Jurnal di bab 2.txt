@@ -1,0 +1,42 @@
+
+=== Jurnal ====
+1. Erwin Prasetyo & Budi Prasetyo. 2020. Peningkatan Akurasi Klasifikasi Algoritma C4.5 Menggunakan Teknik Bagging Pada Diagnosis Penyakit Jantung
+
+2. Pandito Dewa Putra & Dian Palupi Rini. 2019. Prediksi Penyakit Jantung dengan Algoritma Klasifikasi
+
+3. Ardea Bagas Wibisono & Achmad Fahrurozi. 2019. Perbandingan Algoritma Klasifikasi Dalam Pengklasifikasian Data Penyakit Jantung Koroner
+
+4. Riski Annisa. 2019. Analisis Komparasi Algoritma Klasifikasi Data Mining Untuk Prediksi Penderita Penyakit Jantung
+
+5. Mei Lestari. 2014. Penerapan Algoritma Klasifikasi Nearest Neighbor (K-NN) Untuk Mendeteksi Penyakit Jantung
+
+6. Abdul Rohman, Vincent Suhartono, Catur Supriyanto. 2017. Penerapan Algoritma C4.5 Berbasis Adaboost Untuk Prediksi Penyakit Jantung
+
+7. Nur Aeni Widiastuti, Stefanus Santosa, Catur Supriyanto. 2014. Algoritma Klasifikasi Data Mining Naive Bayes Berbasis Particle Swarm Optimization Untuk Deteksi Penyakit Jantung
+
+8. Dito Putro Utomo & Mesran. 2020. Analisis Komparasi Metode Klasifikasi Data Mining dan Reduksi Atribut Pada Data Set Penyakit Jantung. Terindeks Sinta S3
+
+9. Dwi Normawati & Sri Winiarti. 2017. Seleksi Fitur Menggunakan Penambangan Data Berbasis Variable Precision Rough Set (VPRS) Untuk Diagnosis Penyakit Jantung Koroner. Terindeks Sinta S2
+
+10. Vincentius Abdi Gunawan, Leonardus Sandy Ade Putra, Ignitia Imelda Fitriani. 2020. Sistem Diagnosis Otomatis Identifikasi Penyakit Jantung Coroner Menggunakan Ciri GLCM dan Klasifikasi SVM. Terindeks Sinta 3
+
+11. Majzoob K. Omer, Osama E. Shate, Mohamed S. Adrees, Deris Stiawan, Munawar A. Riyadi, Rahmat Budiarto. 2018. Deep Neural Network for Heart Disease Medical Prescription Expert System. Terindeks Sinta S1
+
+12. Wiharto Wiharto, Esti Suryani, Vicka Cahyawati. 2019. The Methods of Duo Output Neural Network Ensemble for Prediction of Coronary Heart Disease. Terindeks Sinta S1
+
+13. Pareza Alam Jusia. 2018. Analisis Komparasi Pemodelan Algoritma Decision Tree Menggunakan Metode Particle Swarm Optimization Dan metode Adaboost Untuk Prediksi Awal Penyakit Jantung
+
+14. Tri Retnasari & Eva Rahmawati. 2017. Diagnosa Prediksi Penyakit Jantung Dengan Model Algoritma Naive Bayes dan Algoritma C4.5
+
+15. Syafitri Hidayatul Annur Aini, Yuita Arum Sari, Achmad Arwan. 2018. Seleksi Fitur Information Gain Untuk Klasifikasi Penyakit Jantung Menggunakan Kombinasi Metode K-Nearest Neighbor dan Naive Bayes
+
+16. Ichwanul Muslim Karo Karo. 2020. Implementasi Metode XgBoost dan Feature Important Untuk Klasifikasi Pada Kebakaran Hutan dan Lahan
+
+17. Sherla Yualinda, Dr. Dedy Rahma Wijaya, Elis Hernawati. 2020. Application Based On E-Commerce Dataset For Poverty Prediction Using Naive Bayes Algorithm, XgBoost, And Simillarity Based Feature Selection
+
+18. Muhamad Syukron, Rukun Santoso, Tatik Widiharih. 2020. Perbandingan Metode Smote Random Forest dan Smote XgBoost Untuk Klasifikasi Tingkat Penyakit Hepatitis C Pada Imbalance Class Data
+
+19. Ngakan Nyoman Pandika Pinata, I Made Sukarsa, Ni Kadek Dwi Rusjayanthi. 2020. Prediksi Kecelakaan Lalu Lintas di Bali dengan XgBoost Pada Python
+
+20. Ahmedbahaaaldin Ibrahem Ahmed Osman, Ali Najah Ahmed, Ming Fai Chow, Yuk Feng Huang, Ahmed El-Shafie. 2020. Extreme Gradient Boosting (XgBoost) model to predict the groundwater level in Selangor Malaysia
+

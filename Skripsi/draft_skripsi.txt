@@ -1,0 +1,21 @@
+bab 1. Pendahuluan
+umum - khusus
+
+penyakit jantung
+gejala
+data dari who
+
+PENINGKATAN AKURASI KLASIFIKASI ALGORITMA C4.5 MENGGUNAKAN TEKNIK BAGGING PADA DIAGNOSIS PENYAKIT JANTUNG
+
+2: penyakit jantung
+3: penyebab penyakit jantung
+4: gejala penyakit jantung
+5: penyakit jantung di indonesia
+6: pendeteksian secara digital
+7: metode yang sudah ada
+8: kelebihan dan kekurangan metode yang sudah ada
+9: masalah pada metode
+10: kelebihan meotode yang dipilih
+11: rangkuman tujuan penelitian
+
+

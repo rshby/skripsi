@@ -1,0 +1,48 @@
+1. Pengertian jantung dan cara kerja jantung
+2. 
+
+== Data yang digunakan ==
+UCI Cleveland datasets
+total 303 data
+138 data tidak memiliki penyakit jantung
+165 data memiliki penyakit jantung
+
+machine leraning
+
+berbeda dengan supervised.. unsupervised adalah
+
+algoritma machine learning
+algoritma xgboost
+randomized search optimizer
+confuison matrix
+
+==== Bagian Klasifikasi ===
+nama file: 462-1069-1-SM page 1
+nama file: 1966927-ID-klasifikasi, page 2
+
+klasifikasi
+tahapan klasifikasi...
+algoritma klasifikasi:
+  1. Algoritma KNN -> 227327.pdf
+  2. Algoritma Decision tree ->  7-42-1-PB.pdf
+  3. Algoritma SVM -> klasifikasi_gigi...pdf
+  4. Algoritma Random Forest -> 4667-1228..pdf
+  5. Algoritma XgBoost
+
+==== Bagian Algoritma XgBoost ====
+Algoritm XgBoost:
+  1. Pengertian Algoritma XgBoost
+  2. Parameter yang ada
+  3. perhitungan algoritma XgBoost
+
+
+==== Punya Rozian ====
+1. bahas secara general jantung itu apa
+2. bahas penyakit jantung yang kamu teliti secara general
+3. bahas cara deteksi penyakit jantung dari sisi teknologi (kaitan parameter atau atribut dari dataset kamu dengan penyakitnya)
+4. bahas tentang C5 secara general
+4.1 bahas hal-hal atau proses2 yang dilakukan didalam C5 tersebut.
+4.2 kelebihan dan kekurangan dari C5, (didalam kekurangan kamu bahas cara mengatasinya yaitu menggunakan algoritma optimasi)
+4.3 bahas PSO secara general
+4.4 evaluasi model machine learning
+
