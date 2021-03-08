@@ -4,3 +4,10 @@
 3. jelaskan sumber data
 4. jelaskan cara pengambilan data
 5. jelaskan isi data
+
+== Pengolahan Data Awal ==
+1. dilakukan preprocessing -> jelaskan preprocessing (+ jurnal)
+2. membersihkan data outlier supaya distribusi data lbh baik
+3. normalisasi data pada data numerik
+4. one hot encoding untuk data kategoris
+5. masuk ke pipeline untuk masuk tahap berikutnya
