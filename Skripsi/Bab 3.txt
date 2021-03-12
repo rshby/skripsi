@@ -11,3 +11,17 @@
 3. normalisasi data pada data numerik
 4. one hot encoding untuk data kategoris
 5. masuk ke pipeline untuk masuk tahap berikutnya
+
+== Analisis Kebutuhan ==
+1. Analisis Kebutuhan
+  a. pengertian analisis kebutuhan -> 12. BAB II..pages 3-4
+  b. tujuan analisis -> 12. BAB II..pages 5-6
+  c. jenis kebutuhan (fungsional dan non)
+
+2. Kebutuhan Fungsional
+  a. pengertian kebutuhan fungsional -> 786-2749-1-PB..pages 5
+
+3. Kebutuhan non fungsional
+  a. pengertian kebutuhan non fungsional
+  b. perangkat keras
+  c. perangkat lunak
