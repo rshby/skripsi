@@ -25,3 +25,4 @@
   a. pengertian kebutuhan non fungsional
   b. perangkat keras
   c. perangkat lunak
+
