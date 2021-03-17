@@ -1,3 +1,24 @@
+== Tahapan Penelitian == (bukan waterfall)
+1. studi literatur
+2. pengumpulan data
+3. pembagian data menjadi data training dan data testing
+4. preprocessing (normalisasi, dll)
+5. pembuatan model dengan algoritma xgboost (training, dll)
+6. pengujian model (melihat performa model)
+7. perancangan sistem (web -> waterfall)
+8. pembuatan sistem (coding)
+9. pengujian sistem
+
+versi 2
+1. studi literatur
+2. pengumpulan data
+3. preprocessing data (pembagian data, normalisasi, dll)
+4. pembuatan model (xgboost, training dan testing)
+5. pengujian model (confusion matrix utk melihat performa)
+6. perancangan sistem (waterwall)
+7. pembuatan sistem (coding dengan python dan flask)
+8. pengujian sistem
+
 == Pengumpulan Data ==
 1. jelaskan jenis data yang dipakai -> sekunder
 2. jelaskan pengertian data sekunder
@@ -20,13 +41,9 @@
 
 2. Kebutuhan Fungsional
   a. pengertian kebutuhan fungsional -> 786-2749-1-PB..pages 5
+  b. isi kebutuhan fungsional
 
 3. Kebutuhan non fungsional
   a. pengertian kebutuhan non fungsional
   b. perangkat keras
   c. perangkat lunak
-
-apalagi yaa, bingung bund
-
-
-
