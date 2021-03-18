@@ -72,5 +72,8 @@ versi 2
    f. perhitungan dengan MinMax
    g. data tabel baru (hasil MinMax data yg diatas)
 5. One hot Encoding
+   a. pengertian one hot encoding (sitasi kalo ada)
+   b. tujuan one hot encoding
+   c. tabel contoh one hot encoding
 === Training ===
 === Evaluasi ===
