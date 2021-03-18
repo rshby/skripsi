@@ -19,6 +19,10 @@ versi 2
 7. pembuatan sistem (coding dengan python dan flask)
 8. pengujian sistem
 
+== Studi Literatur ==
+1. pengertian studi literatur (sitasi)
+2. penjabaran pengertian
+
 == Pengumpulan Data ==
 1. jelaskan jenis data yang dipakai -> sekunder
 2. jelaskan pengertian data sekunder
@@ -47,3 +51,26 @@ versi 2
   a. pengertian kebutuhan non fungsional
   b. perangkat keras
   c. perangkat lunak
+
+== Pembuatan Model Klasifikasi ==
+=== preprocessing ===
+1. tahapan preprocesing
+2. Outlier
+   a. perngertian outlier
+   b. rumus menghapus outlier
+   c. contoh tabel data
+   d. contoh menghapus outlier berdasarkan data
+3. Splitting (pembagian data training dan data testing)
+   a. penjelasan splitting
+   b. komposisi pembagian 80:20
+4. Normalisasi
+   a. penegertian normalisasi (sitasi kalo ada)
+   b. tujuan normalisasi
+   c. pilih normalisasi menggunakan MinMax
+   d. rumus MinMax
+   e. contoh data untuk normalisasi (tabel)
+   f. perhitungan dengan MinMax
+   g. data tabel baru (hasil MinMax data yg diatas)
+5. One hot Encoding
+=== Training ===
+=== Evaluasi ===
