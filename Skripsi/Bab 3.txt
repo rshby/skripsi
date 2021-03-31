@@ -76,8 +76,9 @@ versi 2
    b. tujuan one hot encoding
    c. tabel contoh one hot encoding
 === Training ===
-   a. flowchart training
+   a. flowchart proses training
    b. contoh dataset untuk trainin (5 data)
    c. proses pembuatan model tree manual (include random search)
    d. cv 
 === Evaluasi ===
+   a. confussion matrix
