@@ -76,9 +76,10 @@ versi 2
    b. tujuan one hot encoding
    c. tabel contoh one hot encoding
 === Training ===
-   a. flowchart proses training
-   b. contoh dataset untuk trainin (5 data)
-   c. proses pembuatan model tree manual (include random search)
-   d. cv 
+   a. flowchart algoritma xgboost secara umum -/ tonton jcopml kalo perlu
+   b. flowchart training xgboost (dengan rumus)
+   c. contoh dataset untuk training (5 row data)
+   d. proses pembuatan model tree manual (include random search) -/ cek github untuk alur codingannya
+   e. cv
 === Evaluasi ===
    a. confussion matrix
