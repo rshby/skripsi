@@ -95,3 +95,7 @@ versi 2
    b. dfd sistem (gambar dan dijelaskan)
 === Perancangan Antarmuka ===
    a. rancangan tampilan interface
+
+
+//-- bab 3 gambar 3.3 --//
+//-- bab 3 gambar 3.30 pages 60 --//-- yang belum mulai
