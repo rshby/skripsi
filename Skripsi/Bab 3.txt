@@ -83,3 +83,15 @@ versi 2
    e. cv
 === Evaluasi ===
    a. confussion matrix
+
+== Proses Desain ==
+1. jelasin proses desain isinya apaan
+2. jelasin subbab ini isinya apaan
+=== Perancangan Sistem ===
+   a. metodologi waterfall (gambar dan dijelaskan)
+   b. arsitektur sistem (gambar dan dijelaskan)
+=== Perancangan Proses ===
+   a. flowchart proses sistem (gambar dan dijelaskan)
+   b. dfd sistem (gambar dan dijelaskan)
+=== Perancangan Antarmuka ===
+   a. rancangan tampilan interface
