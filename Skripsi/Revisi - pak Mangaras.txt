@@ -1,0 +1,13 @@
+pengertian penyakit jantung
+cara pendeteksian penyakit jantung
+penelitian sebelumnya
+permasalahan dalam pendeteksian penyakit jantung
+==
+metode yang memiliki overfitting diantaranya adalah c4.5 (sitasi), dalam penelitian tersebut overfitting dapat diselesaikan dengan threshold pruning
+kamudian dapat juga diatasi dengan menggunakan algoritma Random Forest (5416-10467-1SM.pdf)
+Penelitian yang dilakukan untuk memprediksi ketahanan hidup pasien jantung koroner (4921_7675_1_PB.pdf), menggunakan metode Partial Least Square (PLS) untuk mengatasi overfitting. 
+Sedangkan penelitian yang dilakukan untuk mendiagnosis penyakit jantung berdasarkan suara (Lubis_2019_IOP_Conf.pdf), menerapkan cross validation dalam pembuatan modelnya untuk mengatasi overfitting.
+
+karena xgboost memiliki regularization untuk mengatasi permasalahan overfitting(08329419.pdf)
+==
+bahas overfitting
