@@ -16,6 +16,6 @@ def lihatSemuaDataHeart():
 @app.post("/predict")
 def prediksiData(params: dict):
     try:
-        pass
+        return heart.prediksiData(**params)
     except Exception as e:
         print(f"kesalahan function prediksiData: {e}")

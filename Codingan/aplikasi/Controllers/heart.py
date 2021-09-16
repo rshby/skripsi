@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 db_heart = DatabaseHeart()
 db_baru = DatabaseBaru()
 
-model = pickled_model = pickle.load(open('model_xgb.pkl', 'rb'))
+model = pickle.load(open(r'C:\Users\ROG\Documents\skripsi\Codingan\aplikasi\Controllers\model_xgb.pkl', 'rb'))
 
 # function yang digunakan untuk merubah ObjectID ke String
 def ObjToStr(obj):
@@ -56,10 +56,34 @@ def tambahDataBaru(**params):
         print(f"kesalahan function tambahDataBaru: {e}")
 
 # function yang digunakan untuk memprediksi data
-def prediksiData():
+def prediksiData(**params):
     try:
-        dataTesting = "as"
+        dataParams = [[
+            int(params["age"]),
+            int(params["sex"]),
+            int(params["cp"]),
+            int(params["trestbps"]),
+            int(params["chol"]),
+            int(params["fbs"]),
+            int(params["restecg"]),
+            int(params["thalach"]),
+            int(params["exang"]),
+            float(params["oldpeak"]),
+            int(params["slope"]),
+            int(params["ca"]),
+            int(params["thal"])
+        ]]
+        dataTesting = pd.DataFrame(dataParams, index=[1], columns=['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal'])
         hasil_prediksi = model.predict(dataTesting)[0]
+        if hasil_prediksi == 0:
+            prediksi = "Tidak Terkena Penyakit Jantung"
+        else:
+            prediksi = "Terkena Penyakit Jantung"
         
+        dataRespon = {
+            "msg" : "ok",
+            "prediksi" : prediksi
+        }
+        return dataRespon
     except Exception as e:
-        print(f"kesalahan{e}")
+        print(f"kesalahan function PrediksiData{e}")
