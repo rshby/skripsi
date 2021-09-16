@@ -1,12 +1,13 @@
-from flask import Flask
+from fastapi import FastAPI, Request
+from Controllers import heart
 
-app = Flask(__name__)
+app = FastAPI()
 
-
-@app.route("/")
-def hello_world():
-    return "Hello, World!"
-
-
-if __name__ == "__main__":
-    app.run(port=5000)
+# route API untuk melihat semua data
+@app.get("/heart/all")
+def lihatSemuaDataHeart():
+    try:
+        hasil = heart.viewAllDataHeart()
+        return hasil
+    except Exception as e:
+        print(f"kesalahan function lihatSemuaData: {e}")
