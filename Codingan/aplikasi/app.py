@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Request
 from Controllers import heart
+import uvicorn
 
 app = FastAPI()
 
@@ -19,3 +20,6 @@ def prediksiData(params: dict):
         return heart.prediksiData(**params)
     except Exception as e:
         print(f"kesalahan function prediksiData: {e}")
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8005)
