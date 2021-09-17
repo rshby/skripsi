@@ -19,7 +19,7 @@ app.add_middleware(
 
 # route API untuk melihat semua data
 @app.get("/heart/all")
-def lihatSemuaDataHeart():
+async def lihatSemuaDataHeart():
     try:
         hasil = heart.viewAllDataHeart()
         return hasil
@@ -28,7 +28,7 @@ def lihatSemuaDataHeart():
 
 # route API untuk melihat prediksi data
 @app.get("/predict")
-def prediksiData(age: int, sex: int, cp: int, trestbps: int, chol: int, fbs: int, restecg: int, thalach: int, exang: int, oldpeak: float, slope: int, ca: int, thal: int):
+async def prediksiData(age: int, sex: int, cp: int, trestbps: int, chol: int, fbs: int, restecg: int, thalach: int, exang: int, oldpeak: float, slope: int, ca: int, thal: int):
     try:
         params = {
             "age": age,
