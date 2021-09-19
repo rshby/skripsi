@@ -1,4 +1,3 @@
-from pymongo.common import RETRY_READS
 from Models.heart import Database as DatabaseHeart
 from Models.databaru import Database as DatabaseBaru
 import json
@@ -80,9 +79,27 @@ def prediksiData(**params):
         else:
             prediksi = "Terkena Penyakit Jantung"
         
+        dataInsert = {
+            "age": str(params["age"]),
+            "sex": int(params["sex"]),
+            "cp": int(params["cp"]),
+            "trestbps": int(params["trestbps"]),
+            "chol": int(params["chol"]),
+            "fbs": int(params["fbs"]),
+            "restecg": int(params["restecg"]),
+            "thalach": int(params["thalach"]),
+            "exang": int(params["exang"]),
+            "oldpeak": float(params["oldpeak"]),
+            "slope": int(params["slope"]),
+            "ca": int(params["ca"]),
+            "thal": int(params["thal"]),
+            "target": str(hasil_prediksi)
+        }
+        hasilinsert = tambahDataBaru(**dataInsert)
         dataRespon = {
             "msg" : "ok",
-            "prediksi" : prediksi
+            "prediksi" : prediksi,
+            "hasil_insert": hasilinsert
         }
         return dataRespon
     except Exception as e:

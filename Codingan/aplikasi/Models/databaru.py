@@ -1,7 +1,7 @@
 from mongoengine import connect, Document, StringField, IntField, FloatField
 
 class Databaru(Document):
-    age = IntField(required=True)
+    age = StringField(required=True, max_length=255)
     sex = IntField(required=True)
     cp = IntField(required=True)
     trestbps = IntField(required=True)
@@ -36,7 +36,7 @@ class Database:
             print(f"kesalahan function showAllDatabaru: {e}")
 
     # mehthod yang digunakan untuk menambah data ke databaru
-    def insertDatabaru(**params):
+    def insertDatabaru(self, **params):
         try:
             return Databaru(**params).save()
         except Exception as e:
