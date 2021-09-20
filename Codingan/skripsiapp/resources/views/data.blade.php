@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
 
     <!-- My Css -->
     <link rel="stylesheet" href="style.css" />
@@ -38,7 +38,7 @@
     <section class="jumbotron jumbotron-fluid text-center">
         <div class="container">
             <img src="images/gambar_data.png" alt="gambar jantung" width="250">
-            <h1 class="display-4">Informasi Data</h1>
+            <h1 class="display-4">Data Yang Digunakan</h1>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#fff" fill-opacity="1" d="M0,32L21.8,48C43.6,64,87,96,131,128C174.5,160,218,192,262,192C305.5,192,349,160,393,144C436.4,128,480,128,524,138.7C567.3,149,611,171,655,165.3C698.2,160,742,128,785,138.7C829.1,149,873,203,916,213.3C960,224,1004,192,1047,154.7C1090.9,117,1135,75,1178,64C1221.8,53,1265,75,1309,112C1352.7,149,1396,203,1418,229.3L1440,256L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path>
@@ -96,10 +96,10 @@
     <!-- Akhir Footer -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.js"></script>
 
     <!-- JavaScript unutk Ajax -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="jquery-3.6.0.js"></script>
     <script>
         $(document).ready(function() {
             var settings = {
