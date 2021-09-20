@@ -25,9 +25,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav margin ms-auto">
-                    <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-                    <a class="nav-link" href="information.php">Information</a>
-                    <a class="nav-link" href="#">Data</a>
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <a class="nav-link" href="information">Information</a>
+                    <a class="nav-link" href="data">Data</a>
                 </div>
             </div>
         </div>
@@ -207,8 +207,6 @@
         <h5 class="text-center" style="color:black">Reo Sahobby</h5>
     </footer>
     <!-- Akhir Footer -->
-
-    <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>

@@ -25,9 +25,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav margin ms-auto">
-                    <a class="nav-link" aria-current="page" href="index.php">Home</a>
-                    <a class="nav-link active" href="information.php">Information</a>
-                    <a class="nav-link" href="#">Data</a>
+                    <a class="nav-link" aria-current="page" href="/">Home</a>
+                    <a class="nav-link active" href="information">Information</a>
+                    <a class="nav-link" href="data">Data</a>
                 </div>
             </div>
         </div>
