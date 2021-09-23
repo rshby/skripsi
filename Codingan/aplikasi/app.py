@@ -81,7 +81,7 @@ async def showXtrain():
     except Exception as e:
         print(f"kesalahan function API showXtrain: {e}")
 
-# function yang digunakan untuk menampilkan X_train hasil scaling
+# route API yang digunakan untuk menampilkan X_train hasil scaling
 @app.get("/preprocessing/scaling")
 async def showXtrainScaling():
     try:
@@ -89,13 +89,29 @@ async def showXtrainScaling():
     except Exception as e:
         print(f"kesalahan function API showXtrainScaling: {e}")
 
-# function yang digunakan untuk menampilkan X_train hasil OneHotEncoder
+# route API yang digunakan untuk menampilkan X_train hasil OneHotEncoder
 @app.get("/preprocessing/onehot")
 async def showXtrainOneHot():
     try:
         return preprocessing.showXtrainOneHot()
     except Exception as e:
         print(f"kesalahan function API showXtrainoneHot: {e}")
+
+# route API yang digunakan untuk menampilkan X_train hasil preprocessing
+@app.get("/preprocessing/hasil")
+async def showXtrainHasilPreprocessing():
+    try:
+        return preprocessing.showXtrainHasilPreprocessing()
+    except Exception as e:
+        print(f"kesalahan function API showXtrainHasilPreprocesing: {e}")
+
+# route API yang digunakan untuk menampilkan contoh data train
+@app.get("/contohdatatrain")
+async def showContohDataTrain():
+    try:
+        return preprocessing.showContohDataTrain()
+    except Exception as e:
+        print(f"kesalahan function API showContohDataTrain: {e}")
 
 if __name__ == "__main__":
     uvicorn.run("app:app", host="0.0.0.0", port=8005, reload=True)

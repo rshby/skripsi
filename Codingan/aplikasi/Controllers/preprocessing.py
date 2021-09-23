@@ -37,7 +37,7 @@ def showXtrainScaling():
 # function yang digunakan untuk menampilkan data X_train hasil onehot
 def showXtrainOneHot():
     try:
-        return pd.read_feather(r"C:\Users\ROG\Documents\skripsi\Datasets\X_train_onehot.feather").to_dict(orient="records")
+        return pd.read_csv(r"C:\Users\ROG\Documents\skripsi\Datasets\X_train_onehot.csv").to_dict(orient="records")
     except Exception as e:
         print(f"kesalahan function showXtrainOneHot: {e}")
 
@@ -51,6 +51,6 @@ def showXtrainHasilPreprocessing():
 # fucntion yang digunakan untuk menampilkan contoh data Training
 def showContohDataTrain():
     try:
-        return pd.read_feather(r"C:\Users\ROG\Documents\skripsi\Datasets\contoh_data_training.feather").to_dict(orient="records")
+        return pd.read_csv(r"C:\Users\ROG\Documents\skripsi\Datasets\contoh_data_training.csv").to_dict(orient="records")
     except Exception as e:
         print(f"kesalahan function showContohDataTrain: {e}")
