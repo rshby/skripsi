@@ -60,8 +60,8 @@
                 <table class="table table-striped" id="tabel_isi_data">
                     <thead class="table-dark">
                         <tr>
-                            <th scope="col">Umur</th>
-                            <th scope="col">Jenis Kelamin</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Sex</th>
                             <th scope="col">CP</th>
                             <th scope="col">Trestbps</th>
                             <th scope="col">Chol</th>
@@ -96,8 +96,8 @@
                 <table class="table table-striped" id="tabel_x">
                     <thead class="table-dark">
                         <tr>
-                            <th scope="col">Umur</th>
-                            <th scope="col">Jenis Kelamin</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Sex</th>
                             <th scope="col">CP</th>
                             <th scope="col">Trestbps</th>
                             <th scope="col">Chol</th>
@@ -129,8 +129,8 @@
                 <table class="table table-striped" id="tabel_x_train">
                     <thead class="table-dark">
                         <tr>
-                            <th scope="col">Umur</th>
-                            <th scope="col">Jenis Kelamin</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Sex</th>
                             <th scope="col">CP</th>
                             <th scope="col">Trestbps</th>
                             <th scope="col">Chol</th>
@@ -151,7 +151,7 @@
     <!-- Akhir Menampilkan X_train -->
 
     <!-- Menampilkan X_train Hasil Scaling -->
-    <section id="data_train" class="container">
+    <section id="data_train_scaling" class="container">
         <div class="row mt-5">
             <div class="col text-center">
                 <h3>Data X_train Hasil Scaling</h3>
@@ -162,7 +162,7 @@
                 <table class="table table-striped" id="tabel_x_train_scaling">
                     <thead class="table-dark">
                         <tr>
-                            <th scope="col">Umur</th>
+                            <th scope="col">Age</th>
                             <th scope="col">Trestbps</th>
                             <th scope="col">Chol</th>
                             <th scope="col">Thalach</th>
@@ -174,6 +174,50 @@
         </div>
     </section>
     <!-- Akhir Menampilkan X_train Hasil Scaling -->
+
+    <!-- Menampilkan X_train Hasil OneHotEncoding -->
+    <section id="data_train_onehot" class="container">
+        <div class="row mt-5">
+            <div class="col text-center">
+                <h3>Data X_train Hasil OneHotEncoding</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <table class="table table-striped" id="tabel_x_train_onehot">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">sex_0</th>
+                            <th scope="col">sex_1</th>
+                            <th scope="col">cp_0</th>
+                            <th scope="col">cp_1</th>
+                            <th scope="col">cp_2</th>
+                            <th scope="col">cp_3</th>
+                            <th scope="col">fbs_0</th>
+                            <th scope="col">fbs_1</th>
+                            <th scope="col">restecg_0</th>
+                            <th scope="col">restecg_1</th>
+                            <th scope="col">exang_0</th>
+                            <th scope="col">exang_1</th>
+                            <th scope="col">slope_0</th>
+                            <th scope="col">slope_1</th>
+                            <th scope="col">slope_2</th>
+                            <th scope="col">ca_0</th>
+                            <th scope="col">ca_1</th>
+                            <th scope="col">ca_2</th>
+                            <th scope="col">ca_3</th>
+                            <th scope="col">ca_4</th>
+                            <th scope="col">thal_0</th>
+                            <th scope="col">thal_1</th>
+                            <th scope="col">thal_2</th>
+                            <th scope="col">thal_3</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- AKhir Menampilkan X_train Hasil OneHotEncoding -->
 
     <section id="hasil_prediksi">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -196,6 +240,11 @@
     <script>
         $(document).ready(function() {
             $("#tabel_isi_data").DataTable({
+                pageLength: 5,
+                lengthMenu: [
+                    [5, 10, 20, -1],
+                    [5, 10, 20, 'All']
+                ],
                 "ajax": "http://localhost:8005/preprocessing/hapusoutlier",
                 "columns": [{
                         "data": "age"
@@ -243,6 +292,11 @@
             });
 
             $("#tabel_x").DataTable({
+                pageLength: 5,
+                lengthMenu: [
+                    [5, 10, 20, -1],
+                    [5, 10, 20, 'All']
+                ],
                 "ajax": "http://localhost:8005/preprocessing/x",
                 "columns": [{
                         "data": "age"
@@ -287,6 +341,11 @@
             });
 
             $("#tabel_x_train").DataTable({
+                pageLength: 5,
+                lengthMenu: [
+                    [5, 10, 20, -1],
+                    [5, 10, 20, 'All']
+                ],
                 "ajax": "http://localhost:8005/preprocessing/xtrain",
                 "columns": [{
                         "data": "age"
@@ -331,6 +390,11 @@
             });
 
             $("#tabel_x_train_scaling").DataTable({
+                pageLength: 5,
+                lengthMenu: [
+                    [5, 10, 20, -1],
+                    [5, 10, 20, 'All']
+                ],
                 "ajax": "http://localhost:8005/preprocessing/scaling",
                 "columns": [{
                         "data": "age"
@@ -346,6 +410,89 @@
                     },
                     {
                         "data": "oldpeak"
+                    }
+                ]
+            });
+
+            $("#tabel_x_train_onehot").DataTable({
+                pageLength: 5,
+                lengthMenu: [
+                    [5, 10, 20, -1],
+                    [5, 10, 20, 'All']
+                ],
+                "scrollX": true,
+                "ajax": "http://localhost:8005/preprocessing/onehot",
+                "columns": [{
+                        "data": "sex_0"
+                    },
+                    {
+                        "data": "sex_1"
+                    },
+                    {
+                        "data": "cp_0"
+                    },
+                    {
+                        "data": "cp_1"
+                    },
+                    {
+                        "data": "cp_2"
+                    },
+                    {
+                        "data": "cp_3"
+                    },
+                    {
+                        "data": "fbs_0"
+                    },
+                    {
+                        "data": "fbs_1"
+                    },
+                    {
+                        "data": "restecg_0"
+                    },
+                    {
+                        "data": "restecg_1"
+                    },
+                    {
+                        "data": "exang_0"
+                    },
+                    {
+                        "data": "exang_1"
+                    },
+                    {
+                        "data": "slope_0"
+                    },
+                    {
+                        "data": "slope_1"
+                    },
+                    {
+                        "data": "slope_2"
+                    },
+                    {
+                        "data": "ca_0"
+                    },
+                    {
+                        "data": "ca_1"
+                    },
+                    {
+                        "data": "ca_2"
+                    },
+                    {
+                        "data": "ca_3"
+                    },
+                    {
+                        "data": "ca_4"
+                    },
+                    {
+                        "data": "thal_0"
+                    },
+                    {
+                        "data": "thal_1"
+                    },
+                    {
+                        "data": "thal_2"
+                    },
+                    {
+                        "data": "thal_3"
                     }
                 ]
             });

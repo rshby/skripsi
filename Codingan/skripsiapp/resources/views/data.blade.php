@@ -55,7 +55,7 @@
             </div>
         </div>
         <div class="row justify-content-center tabel_data">
-            <div class="col-12">
+            <div class="col-11">
                 <table class="table table-striped" id="tabel_isi_data">
                     <thead class="table-dark">
                         <tr>
@@ -105,6 +105,12 @@
     <script>
         $(document).ready(function() {
             $("#tabel_isi_data").DataTable({
+                pageLength: 5,
+                lengthMenu: [
+                    [5, 10, 20, -1],
+                    [5, 10, 20, 'All']
+                ],
+                "scrollX": true,
                 "ajax": "http://localhost:8005/heart/all",
                 "columns": [{
                         "data": "age"
