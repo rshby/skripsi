@@ -39,7 +39,7 @@
     <!-- Jumbotron -->
     <section class="jumbotron jumbotron-fluid text-center">
         <div class="container">
-            <img src="images/gambar_data.png" alt="gambar jantung" width="250">
+            <img src="images/preprocessing.png" alt="gambar jantung" width="250">
             <h1 class="display-4">Preprocessing Data</h1>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -48,8 +48,9 @@
     </section>
     <!-- Akhir Jumbotron -->
 
+    <!-- Hasil Menghapus Outlier -->
     <section id="isi_informasi" class="container">
-        <div class="row justify-content-center mb-2">
+        <div class="row justify-content-center">
             <div class="col-4 text-center">
                 <h3>Data Hasil Menghapus Outlier</h3>
             </div>
@@ -81,14 +82,104 @@
             </div>
         </div>
     </section>
+    <!-- AKhir Hasil Menghapus Outlier -->
 
-    <!-- Hasil Prediksi -->
+    <!-- Menampilkan X -->
+    <section id="data_x" class="container">
+        <div class="row mt-5">
+            <div class="col text-center">
+                <h3>Data X (Features)</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-striped" id="tabel_x">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Umur</th>
+                            <th scope="col">Jenis Kelamin</th>
+                            <th scope="col">CP</th>
+                            <th scope="col">Trestbps</th>
+                            <th scope="col">Chol</th>
+                            <th scope="col">Fbs</th>
+                            <th scope="col">Restecg</th>
+                            <th scope="col">Thalach</th>
+                            <th scope="col">Exang</th>
+                            <th scope="col">Oldpeak</th>
+                            <th scope="col">Slope</th>
+                            <th scope="col">Ca</th>
+                            <th scope="col">Thal</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Menampilkan X -->
+
+    <!-- Menampilkan X_train -->
+    <section id="data_train" class="container">
+        <div class="row mt-5">
+            <div class="col text-center">
+                <h3>Data X_train</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-striped" id="tabel_x_train">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Umur</th>
+                            <th scope="col">Jenis Kelamin</th>
+                            <th scope="col">CP</th>
+                            <th scope="col">Trestbps</th>
+                            <th scope="col">Chol</th>
+                            <th scope="col">Fbs</th>
+                            <th scope="col">Restecg</th>
+                            <th scope="col">Thalach</th>
+                            <th scope="col">Exang</th>
+                            <th scope="col">Oldpeak</th>
+                            <th scope="col">Slope</th>
+                            <th scope="col">Ca</th>
+                            <th scope="col">Thal</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Menampilkan X_train -->
+
+    <!-- Menampilkan X_train Hasil Scaling -->
+    <section id="data_train" class="container">
+        <div class="row mt-5">
+            <div class="col text-center">
+                <h3>Data X_train Hasil Scaling</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <table class="table table-striped" id="tabel_x_train_scaling">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Umur</th>
+                            <th scope="col">Trestbps</th>
+                            <th scope="col">Chol</th>
+                            <th scope="col">Thalach</th>
+                            <th scope="col">Oldpeak</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Menampilkan X_train Hasil Scaling -->
+
     <section id="hasil_prediksi">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#9fc55a" fill-opacity="1" d="M0,128L80,144C160,160,320,192,480,202.7C640,213,800,203,960,202.7C1120,203,1280,213,1360,218.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
         </svg>
     </section>
-    <!-- Akhir Hasil Prediksi -->
 
     <!-- Footer -->
     <footer>
@@ -105,7 +196,7 @@
     <script>
         $(document).ready(function() {
             $("#tabel_isi_data").DataTable({
-                "ajax": "http://localhost:8005/heart/all",
+                "ajax": "http://localhost:8005/preprocessing/hapusoutlier",
                 "columns": [{
                         "data": "age"
                     },
@@ -147,6 +238,114 @@
                     },
                     {
                         "data": "target"
+                    }
+                ]
+            });
+
+            $("#tabel_x").DataTable({
+                "ajax": "http://localhost:8005/preprocessing/x",
+                "columns": [{
+                        "data": "age"
+                    },
+                    {
+                        "data": "sex"
+                    },
+                    {
+                        "data": "cp"
+                    },
+                    {
+                        "data": "trestbps"
+                    },
+                    {
+                        "data": "chol"
+                    },
+                    {
+                        "data": "fbs"
+                    },
+                    {
+                        "data": "restecg"
+                    },
+                    {
+                        "data": "thalach"
+                    },
+                    {
+                        "data": "exang"
+                    },
+                    {
+                        "data": "oldpeak"
+                    },
+                    {
+                        "data": "slope"
+                    },
+                    {
+                        "data": "ca"
+                    },
+                    {
+                        "data": "thal"
+                    }
+                ]
+            });
+
+            $("#tabel_x_train").DataTable({
+                "ajax": "http://localhost:8005/preprocessing/xtrain",
+                "columns": [{
+                        "data": "age"
+                    },
+                    {
+                        "data": "sex"
+                    },
+                    {
+                        "data": "cp"
+                    },
+                    {
+                        "data": "trestbps"
+                    },
+                    {
+                        "data": "chol"
+                    },
+                    {
+                        "data": "fbs"
+                    },
+                    {
+                        "data": "restecg"
+                    },
+                    {
+                        "data": "thalach"
+                    },
+                    {
+                        "data": "exang"
+                    },
+                    {
+                        "data": "oldpeak"
+                    },
+                    {
+                        "data": "slope"
+                    },
+                    {
+                        "data": "ca"
+                    },
+                    {
+                        "data": "thal"
+                    }
+                ]
+            });
+
+            $("#tabel_x_train_scaling").DataTable({
+                "ajax": "http://localhost:8005/preprocessing/scaling",
+                "columns": [{
+                        "data": "age"
+                    },
+                    {
+                        "data": "trestbps"
+                    },
+                    {
+                        "data": "chol"
+                    },
+                    {
+                        "data": "thalach"
+                    },
+                    {
+                        "data": "oldpeak"
                     }
                 ]
             });
