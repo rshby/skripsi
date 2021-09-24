@@ -26,11 +26,11 @@ def viewAllDataHeart():
         for data in hasil:
             data["id"] = ObjToStr(data)
             data_list.append(data)
-        datadict = {
+        dataDict = {
             "message" : "success",
             "data" : data_list
         }
-        return data_list
+        return dataDict
     except Exception as e:
         print(f"kesalahan function viewAllDataHeart: {e}")
 

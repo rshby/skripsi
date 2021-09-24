@@ -98,58 +98,56 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="js/bootstrap.bundle.js"></script>
-
-    <!-- JavaScript unutk Ajax -->
     <script src="jquery-3.6.0.js"></script>
     <script type="text/javascript" src="datatables/datatables.min.js"></script>
 
     <script>
         $(document).ready(function() {
-            // var dataNew = [];
-            // let get = [];
-            // var getData = $.ajax({
-            //     type: "GET",
-            //     dataType: "json",
-            //     url: "http://localhost:8005/heart/all",
-            //     success: function(data) {
-            //         return data;
-
-
-            //     }
-
-            // });
-            // get = getData;
-            // console.log("iki data", get)
-
-            var settings = {
-                "url": "http://localhost:8005/heart/all",
-                "method": "GET",
-                "timeout": 0,
-            };
-            $.ajax(settings).done(function(response) {
-                console.log(response);
-                $.each(response, function(key, value) {
-                    $('#isi_data').append(
-                        "<tr class='text-center'>" +
-                        '<td>' + value.age + '</td>' +
-                        '<td>' + value.sex + '</td>' +
-                        '<td>' + value.cp + '</td>' +
-                        '<td>' + value.trestbps + '</td>' +
-                        '<td>' + value.chol + '</td>' +
-                        '<td>' + value.fbs + '</td>' +
-                        '<td>' + value.restecg + '</td>' +
-                        '<td>' + value.thalach + '</td>' +
-                        '<td>' + value.exang + '</td>' +
-                        '<td>' + value.oldpeak + '</td>' +
-                        '<td>' + value.slope + '</td>' +
-                        '<td>' + value.ca + '</td>' +
-                        '<td>' + value.thal + '</td>' +
-                        '<td>' + value.target + '</td>' +
-                        '</tr>'
-                    );
-                });
-                hasilData = response
-                return hasilData
+            $("#tabel_isi_data").DataTable({
+                "ajax": "http://localhost:8005/heart/all",
+                "columns": [{
+                        "data": "age"
+                    },
+                    {
+                        "data": "sex"
+                    },
+                    {
+                        "data": "cp"
+                    },
+                    {
+                        "data": "trestbps"
+                    },
+                    {
+                        "data": "chol"
+                    },
+                    {
+                        "data": "fbs"
+                    },
+                    {
+                        "data": "restecg"
+                    },
+                    {
+                        "data": "thalach"
+                    },
+                    {
+                        "data": "exang"
+                    },
+                    {
+                        "data": "oldpeak"
+                    },
+                    {
+                        "data": "slope"
+                    },
+                    {
+                        "data": "ca"
+                    },
+                    {
+                        "data": "thal"
+                    },
+                    {
+                        "data": "target"
+                    }
+                ]
             });
         });
     </script>
