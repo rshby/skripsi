@@ -105,17 +105,31 @@
 
     <script>
         $(document).ready(function() {
+            // var dataNew = [];
+            // let get = [];
+            // var getData = $.ajax({
+            //     type: "GET",
+            //     dataType: "json",
+            //     url: "http://localhost:8005/heart/all",
+            //     success: function(data) {
+            //         return data;
+
+
+            //     }
+
+            // });
+            // get = getData;
+            // console.log("iki data", get)
 
             var settings = {
                 "url": "http://localhost:8005/heart/all",
                 "method": "GET",
                 "timeout": 0,
             };
-
             $.ajax(settings).done(function(response) {
                 console.log(response);
                 $.each(response, function(key, value) {
-                    $('#tabel_isi_data').append(
+                    $('#isi_data').append(
                         "<tr class='text-center'>" +
                         '<td>' + value.age + '</td>' +
                         '<td>' + value.sex + '</td>' +
@@ -134,8 +148,9 @@
                         '</tr>'
                     );
                 });
+                hasilData = response
+                return hasilData
             });
-            $('#tabel_isi_data').DataTable();
         });
     </script>
 </body>
