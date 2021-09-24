@@ -11,6 +11,7 @@
 
     <!-- My Css -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="datatables/datatables.min.css" />
 
     <title>Sistem Prediksi Penyakit Jantung</title>
 </head>
@@ -54,7 +55,7 @@
         </div>
         <div class="row justify-content-center tabel_data">
             <div class="col-12">
-                <table class="table table-striped">
+                <table class="table table-striped" id="tabel_isi_data">
                     <thead class="table-dark">
                         <tr>
                             <th scope="col">Umur</th>
@@ -100,8 +101,11 @@
 
     <!-- JavaScript unutk Ajax -->
     <script src="jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="datatables/datatables.min.js"></script>
+
     <script>
         $(document).ready(function() {
+
             var settings = {
                 "url": "http://localhost:8005/heart/all",
                 "method": "GET",
@@ -111,7 +115,7 @@
             $.ajax(settings).done(function(response) {
                 console.log(response);
                 $.each(response, function(key, value) {
-                    $('#isi_data').append(
+                    $('#tabel_isi_data').append(
                         "<tr class='text-center'>" +
                         '<td>' + value.age + '</td>' +
                         '<td>' + value.sex + '</td>' +
@@ -129,10 +133,9 @@
                         '<td>' + value.target + '</td>' +
                         '</tr>'
                     );
-
-
                 });
             });
+            $('#tabel_isi_data').DataTable();
         });
     </script>
 </body>
