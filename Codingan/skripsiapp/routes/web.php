@@ -24,3 +24,7 @@ Route::get('/information', function () {
 Route::get('/data', function () {
     return view('data');
 });
+
+Route::get('/preprocessing', function () {
+    return view('preprocessing');
+});

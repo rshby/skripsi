@@ -28,8 +28,8 @@
                 <div class="navbar-nav margin ms-auto">
                     <a class="nav-link" aria-current="page" href="/">Home</a>
                     <a class="nav-link" href="information">Information</a>
-                    <a class="nav-link active" href="data">Data</a>
-                    <a class="nav-link" href="preprocessing">Preprocessing</a>
+                    <a class="nav-link" href="data">Data</a>
+                    <a class="nav-link active" href="preprocessing">Preprocessing</a>
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@
     <section class="jumbotron jumbotron-fluid text-center">
         <div class="container">
             <img src="images/gambar_data.png" alt="gambar jantung" width="250">
-            <h1 class="display-4">Data Yang Digunakan</h1>
+            <h1 class="display-4">Preprocessing Data</h1>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#fff" fill-opacity="1" d="M0,128L40,122.7C80,117,160,107,240,112C320,117,400,139,480,128C560,117,640,75,720,101.3C800,128,880,224,960,224C1040,224,1120,128,1200,106.7C1280,85,1360,139,1400,165.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
@@ -51,7 +51,7 @@
     <section id="isi_informasi" class="container">
         <div class="row justify-content-center mb-2">
             <div class="col-4 text-center">
-                <h3>Dataset yang digunakan</h3>
+                <h3>Data Hasil Menghapus Outlier</h3>
             </div>
         </div>
         <div class="row justify-content-center tabel_data">
@@ -85,7 +85,7 @@
     <!-- Hasil Prediksi -->
     <section id="hasil_prediksi">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#9fc55a" fill-opacity="1" d="M0,64L26.7,74.7C53.3,85,107,107,160,101.3C213.3,96,267,64,320,48C373.3,32,427,32,480,42.7C533.3,53,587,75,640,117.3C693.3,160,747,224,800,229.3C853.3,235,907,181,960,181.3C1013.3,181,1067,235,1120,224C1173.3,213,1227,139,1280,101.3C1333.3,64,1387,64,1413,64L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+            <path fill="#9fc55a" fill-opacity="1" d="M0,128L80,144C160,160,320,192,480,202.7C640,213,800,203,960,202.7C1120,203,1280,213,1360,218.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
         </svg>
     </section>
     <!-- Akhir Hasil Prediksi -->

@@ -28,6 +28,7 @@
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
                     <a class="nav-link" href="information">Information</a>
                     <a class="nav-link" href="data">Data</a>
+                    <a class="nav-link" href="preprocessing">Preprocessing</a>
                 </div>
             </div>
         </div>
@@ -211,6 +212,7 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="js/bootstrap.bundle.js"></script>
     <script src="jquery-3.6.0.js"></script>
+
     <script>
         $(document).ready(function() {
             $("#form_inputan").submit(function(ev) {
