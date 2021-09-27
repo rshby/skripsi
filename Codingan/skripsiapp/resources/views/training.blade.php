@@ -150,6 +150,44 @@
     </section>
     <!-- Akhri Menampilkan Data train dengan residual -->
 
+    <!-- Menampilkan HyperParameter Terbaik -->
+    <section class="container">
+        <div class="row mt-5">
+            <div class="col text-center">
+                <h3>HyperParameter Terbaik</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <table class="table table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">subsample</th>
+                            <th scope="col">n_estimators</th>
+                            <th scope="col">min_child_weight</th>
+                            <th scope="col">max_depth</th>
+                            <th scope="col">learning_rate</th>
+                            <th scope="col">gamma</th>
+                            <th scope="col">colsample_bytree</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>0.86659999</th>
+                            <th>44</th>
+                            <th>1</th>
+                            <th>10</th>
+                            <th>0.03510000006</th>
+                            <th>3</th>
+                            <th>0.98789999998</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Menampilkan HyperParameter Terbaik -->
+
     <!-- Menampilkan Gambar Tree -->
     <section class="container" id="gambar_tree">
         <div class="row mt-4">
