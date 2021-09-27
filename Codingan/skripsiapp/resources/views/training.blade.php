@@ -49,14 +49,15 @@
     </section>
     <!-- Akhir Jumbotron -->
 
-    <section id="isi_informasi" class="container">
-        <div class="row justify-content-center mb-2">
-            <div class="col-8 text-center">
+    <!-- Menampilkan contoh data train -->
+    <section id="contoh_data_train" class="container">
+        <div class="row">
+            <div class="col text-center">
                 <h3>Contoh Data Training yang digunakan</h3>
             </div>
         </div>
-        <div class="row justify-content-center tabel_data">
-            <div class="col-11">
+        <div class="row justify-content-center">
+            <div class="col-12">
                 <table class="table table-striped" id="tabel_contoh_training">
                     <thead class="table-dark">
                         <tr>
@@ -92,12 +93,92 @@
                             <th scope="col">target</th>
                         </tr>
                     </thead>
-                    <tbody id="isi_data">
-                    </tbody>
                 </table>
             </div>
         </div>
     </section>
+    <!-- Akhir menampilkan data train -->
+
+    <!-- Menampikan Data train dengan residual -->
+    <section id="residual" class="container">
+        <div class="row mt-5">
+            <div class="col text-center">
+                <h3>Menampilkan Residual</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <table class="table table-striped" id="tabel_residual">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">age</th>
+                            <th scope="col">trestbps</th>
+                            <th scope="col">chol</th>
+                            <th scope="col">thalach</th>
+                            <th scope="col">oldpeak</th>
+                            <th scope="col">sex_0</th>
+                            <th scope="col">sex_1</th>
+                            <th scope="col">cp_0</th>
+                            <th scope="col">cp_1</th>
+                            <th scope="col">cp_2</th>
+                            <th scope="col">cp_3</th>
+                            <th scope="col">fbs_0</th>
+                            <th scope="col">fbs_1</th>
+                            <th scope="col">restecg_0</th>
+                            <th scope="col">restecg_1</th>
+                            <th scope="col">exang_0</th>
+                            <th scope="col">exang_1</th>
+                            <th scope="col">slope_0</th>
+                            <th scope="col">slope_1</th>
+                            <th scope="col">slope_2</th>
+                            <th scope="col">ca_0</th>
+                            <th scope="col">ca_1</th>
+                            <th scope="col">ca_2</th>
+                            <th scope="col">ca_3</th>
+                            <th scope="col">ca_4</th>
+                            <th scope="col">thal_0</th>
+                            <th scope="col">thal_1</th>
+                            <th scope="col">thal_2</th>
+                            <th scope="col">thal_3</th>
+                            <th scope="col">target</th>
+                            <th scope="col">residual</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- Akhri Menampilkan Data train dengan residual -->
+
+    <!-- Menampilkan Gambar Tree -->
+    <section class="container" id="gambar_tree">
+        <div class="row mt-4">
+            <div class="col text-center">
+                <h3>Gambar Tree XgBoost</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col">
+                <img src="images/tree.png" alt="" width="1300">
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Menampilkan Gambar Tree -->
+
+    <!-- Menampilkan Confussion Matrix -->
+    <section class="container " id="tabel_confusion_matrix">
+        <div class="row mt-5 justify-content-center">
+            <div class="col text-center">
+                <h3>Tabel Confusion Matrix</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <img src="images/confusion_matrix.png" alt="" width="860">
+            </div>
+        </div>
+    </section>
+    <!-- AKhir Menampilkan Confusion Matrix -->
 
     <!-- Hasil Prediksi -->
     <section id="hasil_prediksi">
@@ -218,6 +299,110 @@
                     },
                     {
                         "data": "label"
+                    }
+                ]
+            });
+
+            $("#tabel_residual").DataTable({
+                pageLength: 5,
+                lengthMenu: [
+                    [5, 10, 20, -1],
+                    [5, 10, 20, 'All']
+                ],
+                "scrollX": true,
+                "ajax": "http://localhost:8005/residual",
+                "columns": [{
+                        "data": "age"
+                    },
+                    {
+                        "data": "trestbps"
+                    },
+                    {
+                        "data": "chol"
+                    },
+                    {
+                        "data": "thalach"
+                    },
+                    {
+                        "data": "oldpeak"
+                    },
+                    {
+                        "data": "sex_0"
+                    },
+                    {
+                        "data": "sex_1"
+                    },
+                    {
+                        "data": "cp_0"
+                    },
+                    {
+                        "data": "cp_1"
+                    },
+                    {
+                        "data": "cp_2"
+                    },
+                    {
+                        "data": "cp_3"
+                    },
+                    {
+                        "data": "fbs_0"
+                    },
+                    {
+                        "data": "fbs_1"
+                    },
+                    {
+                        "data": "restecg_0"
+                    },
+                    {
+                        "data": "restecg_1"
+                    },
+                    {
+                        "data": "exang_0"
+                    },
+                    {
+                        "data": "exang_1"
+                    },
+                    {
+                        "data": "slope_0"
+                    },
+                    {
+                        "data": "slope_1"
+                    },
+                    {
+                        "data": "slope_2"
+                    },
+                    {
+                        "data": "ca_0"
+                    },
+                    {
+                        "data": "ca_1"
+                    },
+                    {
+                        "data": "ca_2"
+                    },
+                    {
+                        "data": "ca_3"
+                    },
+                    {
+                        "data": "ca_4"
+                    },
+                    {
+                        "data": "thal_0"
+                    },
+                    {
+                        "data": "thal_1"
+                    },
+                    {
+                        "data": "thal_2"
+                    },
+                    {
+                        "data": "thal_3"
+                    },
+                    {
+                        "data": "label"
+                    },
+                    {
+                        "data": "residual"
                     }
                 ]
             });
