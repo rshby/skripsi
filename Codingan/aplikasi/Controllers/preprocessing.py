@@ -1,4 +1,3 @@
-from typing import OrderedDict
 import pandas as pd
 import json
 
@@ -69,13 +68,35 @@ def showXtrainOneHot():
 # function yang digunakan untuk menampilkan X_train hasil preprocessing
 def showXtrainHasilPreprocessing():
     try:
-        return pd.read_csv(r"C:\Users\ROG\Documents\skripsi\Datasets\X_train_hasil_preprocessing.csv").to_dict(orient="records")
+        hasil = pd.read_csv(r"C:\Users\ROG\Documents\skripsi\Datasets\X_train_hasil_preprocessing.csv").to_dict(orient="records")
+        data = {
+            "message": "success",
+            "data": hasil
+        }
+        return data
     except Exception as e:
         print(f"kesalahan function showXtrainHasilPreprocessing: {e}")
 
 # fucntion yang digunakan untuk menampilkan contoh data Training
 def showContohDataTrain():
     try:
-        return pd.read_csv(r"C:\Users\ROG\Documents\skripsi\Datasets\contoh_data_training.csv").to_dict(orient="records")
+        hasil = pd.read_csv(r"C:\Users\ROG\Documents\skripsi\Datasets\contoh_data_training.csv").to_dict(orient="records")
+        data = {
+            "message": "success",
+            "data" : hasil
+        }
+        return data
     except Exception as e:
         print(f"kesalahan function showContohDataTrain: {e}")
+
+# function yang digunakan untuk menampilkan contoh data training + residual
+def showContohDataTrainingResidual():
+    try:
+        hasil = pd.read_csv(r"C:\Users\ROG\Documents\skripsi\Datasets\contoh_data_training_residual.csv").to_dict(orient="records")
+        data = {
+            "message": "success",
+            "data": hasil
+        }
+        return data
+    except Exception as e:
+        print(f"kesalahan function showContohDataTrainResidual: {e}")

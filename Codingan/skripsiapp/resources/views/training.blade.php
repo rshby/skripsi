@@ -28,9 +28,9 @@
                 <div class="navbar-nav margin ms-auto">
                     <a class="nav-link" aria-current="page" href="/">Home</a>
                     <a class="nav-link" href="information">Information</a>
-                    <a class="nav-link active" href="data">Data</a>
+                    <a class="nav-link" href="data">Data</a>
                     <a class="nav-link" href="preprocessing">Preprocessing</a>
-                    <a class="nav-link" href="training">Training</a>
+                    <a class="nav-link active" href="training">Training</a>
                 </div>
             </div>
         </div>
@@ -40,8 +40,8 @@
     <!-- Jumbotron -->
     <section class="jumbotron jumbotron-fluid text-center">
         <div class="container">
-            <img src="images/gambar_data.png" alt="gambar jantung" width="250">
-            <h1 class="display-4">Data Yang Digunakan</h1>
+            <img src="images/machine_learning.png" alt="gambar jantung" width="280">
+            <h1 class="display-4">Proses Training</h1>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#fff" fill-opacity="1" d="M0,128L40,122.7C80,117,160,107,240,112C320,117,400,139,480,128C560,117,640,75,720,101.3C800,128,880,224,960,224C1040,224,1120,128,1200,106.7C1280,85,1360,139,1400,165.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
@@ -51,29 +51,45 @@
 
     <section id="isi_informasi" class="container">
         <div class="row justify-content-center mb-2">
-            <div class="col-4 text-center">
-                <h3>Dataset yang digunakan</h3>
+            <div class="col-8 text-center">
+                <h3>Contoh Data Training yang digunakan</h3>
             </div>
         </div>
         <div class="row justify-content-center tabel_data">
             <div class="col-11">
-                <table class="table table-striped" id="tabel_isi_data">
+                <table class="table table-striped" id="tabel_contoh_training">
                     <thead class="table-dark">
                         <tr>
-                            <th scope="col">Umur</th>
-                            <th scope="col">Jenis Kelamin</th>
-                            <th scope="col">CP</th>
-                            <th scope="col">Trestbps</th>
-                            <th scope="col">Chol</th>
-                            <th scope="col">Fbs</th>
-                            <th scope="col">Restecg</th>
-                            <th scope="col">Thalach</th>
-                            <th scope="col">Exang</th>
-                            <th scope="col">Oldpeak</th>
-                            <th scope="col">Slope</th>
-                            <th scope="col">Ca</th>
-                            <th scope="col">Thal</th>
-                            <th scope="col">Target</th>
+                            <th scope="col">age</th>
+                            <th scope="col">trestbps</th>
+                            <th scope="col">chol</th>
+                            <th scope="col">thalach</th>
+                            <th scope="col">oldpeak</th>
+                            <th scope="col">sex_0</th>
+                            <th scope="col">sex_1</th>
+                            <th scope="col">cp_0</th>
+                            <th scope="col">cp_1</th>
+                            <th scope="col">cp_2</th>
+                            <th scope="col">cp_3</th>
+                            <th scope="col">fbs_0</th>
+                            <th scope="col">fbs_1</th>
+                            <th scope="col">restecg_0</th>
+                            <th scope="col">restecg_1</th>
+                            <th scope="col">exang_0</th>
+                            <th scope="col">exang_1</th>
+                            <th scope="col">slope_0</th>
+                            <th scope="col">slope_1</th>
+                            <th scope="col">slope_2</th>
+                            <th scope="col">ca_0</th>
+                            <th scope="col">ca_1</th>
+                            <th scope="col">ca_2</th>
+                            <th scope="col">ca_3</th>
+                            <th scope="col">ca_4</th>
+                            <th scope="col">thal_0</th>
+                            <th scope="col">thal_1</th>
+                            <th scope="col">thal_2</th>
+                            <th scope="col">thal_3</th>
+                            <th scope="col">target</th>
                         </tr>
                     </thead>
                     <tbody id="isi_data">
@@ -105,22 +121,16 @@
 
     <script>
         $(document).ready(function() {
-            $("#tabel_isi_data").DataTable({
+            $("#tabel_contoh_training").DataTable({
                 pageLength: 5,
                 lengthMenu: [
                     [5, 10, 20, -1],
                     [5, 10, 20, 'All']
                 ],
                 "scrollX": true,
-                "ajax": "http://localhost:8005/heart/all",
+                "ajax": "http://localhost:8005/contohdatatrain",
                 "columns": [{
                         "data": "age"
-                    },
-                    {
-                        "data": "sex"
-                    },
-                    {
-                        "data": "cp"
                     },
                     {
                         "data": "trestbps"
@@ -129,31 +139,85 @@
                         "data": "chol"
                     },
                     {
-                        "data": "fbs"
-                    },
-                    {
-                        "data": "restecg"
-                    },
-                    {
                         "data": "thalach"
-                    },
-                    {
-                        "data": "exang"
                     },
                     {
                         "data": "oldpeak"
                     },
                     {
-                        "data": "slope"
+                        "data": "sex_0"
                     },
                     {
-                        "data": "ca"
+                        "data": "sex_1"
                     },
                     {
-                        "data": "thal"
+                        "data": "cp_0"
                     },
                     {
-                        "data": "target"
+                        "data": "cp_1"
+                    },
+                    {
+                        "data": "cp_2"
+                    },
+                    {
+                        "data": "cp_3"
+                    },
+                    {
+                        "data": "fbs_0"
+                    },
+                    {
+                        "data": "fbs_1"
+                    },
+                    {
+                        "data": "restecg_0"
+                    },
+                    {
+                        "data": "restecg_1"
+                    },
+                    {
+                        "data": "exang_0"
+                    },
+                    {
+                        "data": "exang_1"
+                    },
+                    {
+                        "data": "slope_0"
+                    },
+                    {
+                        "data": "slope_1"
+                    },
+                    {
+                        "data": "slope_2"
+                    },
+                    {
+                        "data": "ca_0"
+                    },
+                    {
+                        "data": "ca_1"
+                    },
+                    {
+                        "data": "ca_2"
+                    },
+                    {
+                        "data": "ca_3"
+                    },
+                    {
+                        "data": "ca_4"
+                    },
+                    {
+                        "data": "thal_0"
+                    },
+                    {
+                        "data": "thal_1"
+                    },
+                    {
+                        "data": "thal_2"
+                    },
+                    {
+                        "data": "thal_3"
+                    },
+                    {
+                        "data": "label"
                     }
                 ]
             });

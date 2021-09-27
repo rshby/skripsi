@@ -28,3 +28,7 @@ Route::get('/data', function () {
 Route::get('/preprocessing', function () {
     return view('preprocessing');
 });
+
+Route::get('/training', function () {
+    return view('training');
+});

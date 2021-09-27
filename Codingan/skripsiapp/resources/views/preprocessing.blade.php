@@ -30,6 +30,7 @@
                     <a class="nav-link" href="information">Information</a>
                     <a class="nav-link" href="data">Data</a>
                     <a class="nav-link active" href="preprocessing">Preprocessing</a>
+                    <a class="nav-link" href="training">Training</a>
                 </div>
             </div>
         </div>
@@ -218,6 +219,55 @@
         </div>
     </section>
     <!-- AKhir Menampilkan X_train Hasil OneHotEncoding -->
+
+    <!-- Menampilkan Data Hasil Preprocessing -->
+    <section id="data_hasil_preprocessing" class="container">
+        <div class="row mt-5">
+            <div class="col text-center">
+                <h3>Data X_train Hasil Preprocessing</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <table class="table table-striped" id="tabel_data_hasil_preprocessing">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">age</th>
+                            <th scope="col">trestbps</th>
+                            <th scope="col">chol</th>
+                            <th scope="col">thalach</th>
+                            <th scope="col">oldpeak</th>
+                            <th scope="col">sex_0</th>
+                            <th scope="col">sex_1</th>
+                            <th scope="col">cp_0</th>
+                            <th scope="col">cp_1</th>
+                            <th scope="col">cp_2</th>
+                            <th scope="col">cp_3</th>
+                            <th scope="col">fbs_0</th>
+                            <th scope="col">fbs_1</th>
+                            <th scope="col">restecg_0</th>
+                            <th scope="col">restecg_1</th>
+                            <th scope="col">exang_0</th>
+                            <th scope="col">exang_1</th>
+                            <th scope="col">slope_0</th>
+                            <th scope="col">slope_1</th>
+                            <th scope="col">slope_2</th>
+                            <th scope="col">ca_0</th>
+                            <th scope="col">ca_1</th>
+                            <th scope="col">ca_2</th>
+                            <th scope="col">ca_3</th>
+                            <th scope="col">ca_4</th>
+                            <th scope="col">thal_0</th>
+                            <th scope="col">thal_1</th>
+                            <th scope="col">thal_2</th>
+                            <th scope="col">thal_3</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Menampilkan Data Hasil Preprocessing -->
 
     <section id="hasil_prediksi">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -423,6 +473,104 @@
                 "scrollX": true,
                 "ajax": "http://localhost:8005/preprocessing/onehot",
                 "columns": [{
+                        "data": "sex_0"
+                    },
+                    {
+                        "data": "sex_1"
+                    },
+                    {
+                        "data": "cp_0"
+                    },
+                    {
+                        "data": "cp_1"
+                    },
+                    {
+                        "data": "cp_2"
+                    },
+                    {
+                        "data": "cp_3"
+                    },
+                    {
+                        "data": "fbs_0"
+                    },
+                    {
+                        "data": "fbs_1"
+                    },
+                    {
+                        "data": "restecg_0"
+                    },
+                    {
+                        "data": "restecg_1"
+                    },
+                    {
+                        "data": "exang_0"
+                    },
+                    {
+                        "data": "exang_1"
+                    },
+                    {
+                        "data": "slope_0"
+                    },
+                    {
+                        "data": "slope_1"
+                    },
+                    {
+                        "data": "slope_2"
+                    },
+                    {
+                        "data": "ca_0"
+                    },
+                    {
+                        "data": "ca_1"
+                    },
+                    {
+                        "data": "ca_2"
+                    },
+                    {
+                        "data": "ca_3"
+                    },
+                    {
+                        "data": "ca_4"
+                    },
+                    {
+                        "data": "thal_0"
+                    },
+                    {
+                        "data": "thal_1"
+                    },
+                    {
+                        "data": "thal_2"
+                    },
+                    {
+                        "data": "thal_3"
+                    }
+                ]
+            });
+
+            $("#tabel_data_hasil_preprocessing").DataTable({
+                pageLength: 5,
+                lengthMenu: [
+                    [5, 10, 20, -1],
+                    [5, 10, 20, 'All']
+                ],
+                "scrollX": true,
+                "ajax": "http://localhost:8005/preprocessing/hasil",
+                "columns": [{
+                        "data": "age"
+                    },
+                    {
+                        "data": "trestbps"
+                    },
+                    {
+                        "data": "chol"
+                    },
+                    {
+                        "data": "thalach"
+                    },
+                    {
+                        "data": "oldpeak"
+                    },
+                    {
                         "data": "sex_0"
                     },
                     {

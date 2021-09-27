@@ -113,5 +113,13 @@ async def showContohDataTrain():
     except Exception as e:
         print(f"kesalahan function API showContohDataTrain: {e}")
 
+# route API yang digunakan untuk menampilkan contoh data train + residual
+@app.get("/residual")
+async def showContohDataTrainResidual():
+    try:
+        return preprocessing.showContohDataTrainingResidual()
+    except Exception as e:
+        print(f"kesalahan function API showDataTrainResidual: {e}")
+
 if __name__ == "__main__":
     uvicorn.run("app:app", host="0.0.0.0", port=8005, reload=True)
