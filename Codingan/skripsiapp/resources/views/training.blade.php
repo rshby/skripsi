@@ -180,6 +180,23 @@
     </section>
     <!-- AKhir Menampilkan Confusion Matrix -->
 
+    <!-- Menampilkan Hasil Akurasi -->
+    <section class="container" id="hasil_akurasi">
+        <div class="row mt-5">
+            <div class="col text-center">
+                <h3>Hasil Akurasi Model Secara Keseluruhan</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <h5>Akurasi : 90.13%</h5>
+                <h5>Presisi : 92.5%</h5>
+                <h5>Recall : 84.84%</h5>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Menampilkan Hasil Akurasi -->
+
     <!-- Hasil Prediksi -->
     <section id="hasil_prediksi">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
