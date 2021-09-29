@@ -212,7 +212,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-12 text-center">
-                <img src="images/confusion_matrix.png" alt="" width="860">
+                <img src="images/confusion_matrix_model.png" alt="" width="860">
             </div>
         </div>
     </section>
