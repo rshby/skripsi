@@ -42,3 +42,10 @@ Oldpeka adalah ukuran gelombang segment ST yang terjadi diakibatkan oleh latihan
 9. Slope
 //berikan gambar slope segment St
 Slope adalah jenis kemiringan pada segment st yang terdapat pada gambar grafik ekg, segement st dapat dihubungkan dengan ketidak normalan dinding jantung, (Wisana, 2013).
+
+10. Ca
+Ca adalah nilai dari jumlah vessel yang diwarnai oleh fluroskopi. Teknik fluroskopi adalah teknik yang memanfaatkan salah satu sinar X yaitu jika sinar tersebut terkena bahan maka akan berpendar menjadi warna tertentu (Kusuma Ayu, 2019). Selain itu fluroskopi bertujuan untuk mengamati kondisi organ tubuh secara real time dengan cara menghasilkan tumpukan gambar bersekuel yang menyerupai video, fluroskopi dapat digunakan untuk menunjang prosedur medis tertentu contohnya adalah pemasangan ring jantung(Wahyu Amir Mustofa, 2021)
+
+11. Thal
+Thal adalah parameter thalsemia yang dimiliki oleh pasien. Thalasemia adalah sebuah penyakit keturunan yang diakibatkan oleh gagalnya pembentukan satu dari empat asam amino yang membentuk hemoglobin, sehingga hemoglobin tidak terbentuk sempurna, (Kusuma, 2016)
+
