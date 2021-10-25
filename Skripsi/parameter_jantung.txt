@@ -36,3 +36,9 @@ Thalac adalah ukuran detak jantung maksimal yang dapat dicapai. Untuk ukuran det
 Exang adalah informasi mengenai latihana angina (nyeri dada) yang dilakukan, apabila pada saat melakukan latihan angina merasakan rasa sakit maka exang akan bernilai 1, namun apabila tidak merasakan rasa sakit maka exang akan bernilai 0 (Latha, 2019). Apabila hanya melihat dari indikator exang, exang yang bernilai 0 seharusnya memiliki presentase yang lebih sedikit untuk menjadi penderita penyakit jantung karena tidak ditemukan rasa sakit pada dada.
 
 8. OldPeak
+Oldpeka adalah ukuran gelombang segment ST yang terjadi diakibatkan oleh latihan relative terhadap kondisi istirahat jantung, ukuran tersebut biasanya didefinisikan dari 1 sampai 3 mm, (Onno Widodo, 2015).
+//berikan gambar: segment ST
+
+9. Slope
+//berikan gambar slope segment St
+Slope adalah jenis kemiringan pada segment st yang terdapat pada gambar grafik ekg, segement st dapat dihubungkan dengan ketidak normalan dinding jantung, (Wisana, 2013).
