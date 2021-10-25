@@ -33,3 +33,6 @@ Restecg adalah hasil pengukuran ecg pada jantung. ECG atau EKG adalah metode pen
 Thalac adalah ukuran detak jantung maksimal yang dapat dicapai. Untuk ukuran detak jantung manusia normal berkisar antara 60-100 kali per menit (Nahdliyah, 2019).
 
 7. Exang
+Exang adalah informasi mengenai latihana angina (nyeri dada) yang dilakukan, apabila pada saat melakukan latihan angina merasakan rasa sakit maka exang akan bernilai 1, namun apabila tidak merasakan rasa sakit maka exang akan bernilai 0 (Latha, 2019). Apabila hanya melihat dari indikator exang, exang yang bernilai 0 seharusnya memiliki presentase yang lebih sedikit untuk menjadi penderita penyakit jantung karena tidak ditemukan rasa sakit pada dada.
+
+8. OldPeak
