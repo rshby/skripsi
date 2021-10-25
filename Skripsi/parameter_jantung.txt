@@ -1,0 +1,35 @@
+Parameter Jantung:
+
+1. CP
+Cp atau chest pain type adalah ketidaknyamanan yang disebabkan ketika otot jantung anda tidak mendapatkan cukup darah yang kaya dengan oksigen. ini mungkin akan terasa seperti tekanan di dada. rasa tidak nyaman ini juga dapat terjadi di bahu, lengan, leher, rahang, atau punggung. Nyeri dada dapat menjadi tanda masalah yang serius seperti masalah jantung, sehingg sangat umum ketika muncul orang mengira akan terjadi serangan jantung (Bezzera, 2021)
+- typical angina
+nyeri ini terjadi ketika oto jantung tidak mendapatkan darah sebanyak yang dibutuhkan. Ini biasanya terjadi karena satu atau lebih arteri jantung yang menyempit atau tersumbat, nyeri ini disebut juga dengan iskemia. Ciri-ciri dari typical angina seperti terjadi ketika jantung harus bekerja lebih keras, tidak mengejutkan, biasanya berlangsung 5 menit, dapat dihilangkan dengan istirahat dan olahraga
+
+- Atypical angina
+atypical angina atau disebut juga dengan unstable angina disebut sindrom koroner akut yang menyebabkan nyeri dada tidak terduga, dan biasanya terjadi saat istirahat.
+penyebab paling umum dari nyeri dada ini adalah berkurangnya alirah darah ke otot jantung karena arteri koroner mengalami penyempitan oleh tumpukan lemak yang dapat pecah sehingga menyebabkan cedera pada pembuluh darah koroner sehingga terjadi pembekuan darah yang menghalangi aliran darah ke oto jantung. Gelaja atypical angina ditandai dengan dapat berlangsung selama lebih dari 20 menit, datang secara tiba-tiba, dapat menyebabkan serangan jantung (Michael E. Farkouh et al, 1998).
+
+- Non-angina pain
+non-angina atau disebut juga non-cardiac chest pain adalah istilah yang digunakan untuk meggambarkan nyeri dada yang sebenarnya bukan gelaja dari penyakit jantung. Gelaja nyeri dadad ini tidak berhubungan dengan jantung, dapat juga disebabkan oleh asupan makanan, masalah perutm stress, kecemasan, namun yang paling sering adalah disebabkan oleh GERD atau asam lambung. 
+
+- Asympotomatic
+Serangan jantung tanpa gelaja sering disebut dengan silent myocardial infraction (SMI) adalah gejala serangan jantung yang tidak bergejala, ini dapat dikatakan sebagai silent killer. Tidak seperti serangan jantung normal yang dikenali berbagai tanda-tanda seperti nyeri dada, sesak napas, dan lain-lain.
+
+dari beberapa gejala di atas, dapat dikatakan bahwa gejala non-angina tidak terlalu menjadi pemicu gejala penyakit jantung. Gejala asympotomatic dapat juga diwaspadai karena tidak memiliki gejala yang jelas namun juga sangat mematikan.
+
+2. Trestbps (Tekanan Darah)
+Tekanan darah adalah ukuran kekuatan yang digunakan jantung untuk memompa darah ke seluruh tubuh. Ukuran tekanan darah didefinisikan dengan mm/hg. Tekanan darah sangan dinamis dan bisa mengalami kenaikan dan penurunan setiap harinya. Untuk ukuran normal tekanan darah adalah kurang dari 120/80 mmHg. Pengaruh dalam penyakit jantung adalah apabila mengalami kenaikan tekanan darah. Peningkatan tekanan darah merupakan beban yang berat sehingga akan menyebabkan hipertropi ventrikel kiri atau mengalami pembesaran ventrikel (Djohan, T, 2004).
+
+3. Chol (Kolesterol)
+Kolesterol adalah golongan steroid. Steroid adalah molekul kompleks yang dapat larut di dalam lemak dengan empat cincin yang saling bergabung. Kolesterol adalah senyawa lipid yang mempunyai inti siklopentaperhidrofenantrena (Saragih, 2005). Sedangkan hubungan dalam penyakit jantung adalah terjadinya hiperkolesterolemia atau peningkatan kadar kolesterol yang merupakan masalah yang cukup penting karena termasuk faktor resiko utama selain hipertensi dan kebiasaan merokok (Djohan, 2004). Ukuran kadar kolesterol total sebaiknya kurang dari 200mg/dl
+
+4. FBS
+FBS adalah kadar pengukuran kadar gula darah yang dilakukan pasien setelah berpuasa selama 8 jam. Pengecekan ini biasanya dilakukan untuk mengetahui apakah pasien tersebut mempunyai diabetes atau tidak. Dalam parameter ini tingkat fbs yang digunakan adalah 120mg/dl. Apabila kadar gula darah melebihi 120mg/dl maka dapat dikatakan bahwa pasien tersebut berpotensi atau mempunyai diabetes. Sedangkan pengaruh diabetes dengan kesehatan jantung adalah pasien yang memiliki diabetes militus mempunyai peluang sebanyak 10,25 kali lebih besar untuk terkena penyakit jantung dibangingkan dengan pasien yang tidak memiliki diabetes militus (Marleni & Alhabib, 2017).
+
+5. Restecg
+Restecg adalah hasil pengukuran ecg pada jantung. ECG atau EKG adalah metode pengukuran kelistrikan yang ada di jantung, ECG dilakukan dengan menempatkan sepuluh eletroda pada titik-titik tertentu, enam elektroda dipasang pada area dada, dan selebihnya dipasang pada area ekstrmitas (Biel et al, 2001). Pemeriksaan EKG merupakan salah satu pemeriksaan wajib yang harus dilakukan kepada pasien yang memiliki komplikasi penyakit jantung (Rosmalinda et al, 2014)
+
+6. Thalach (detak jantung maksimal yang dicapai)
+Thalac adalah ukuran detak jantung maksimal yang dapat dicapai. Untuk ukuran detak jantung manusia normal berkisar antara 60-100 kali per menit (Nahdliyah, 2019).
+
+7. Exang
