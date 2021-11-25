@@ -100,3 +100,15 @@ def showContohDataTrainingResidual():
         return data
     except Exception as e:
         print(f"kesalahan function showContohDataTrainResidual: {e}")
+
+# function yang digunakan untuk menampilkan dataset lain statelog
+def showDatasetLain():
+    try:
+        hasil = pd.read_feather(r"C:\Users\ROG\Documents\skripsi\Datasets\other_dataset_hasil.feather").to_dict(orient="records")
+        data = {
+            "message" : "success",
+            "data" : hasil
+        }
+        return data
+    except Exception as e:
+        print(f"kesalahan function showDatasetLain : {e}")

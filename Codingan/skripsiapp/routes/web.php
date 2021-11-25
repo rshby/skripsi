@@ -32,3 +32,7 @@ Route::get('/preprocessing', function () {
 Route::get('/training', function () {
     return view('training');
 });
+
+Route::get('/pengujian', function () {
+    return view('pengujian');
+});

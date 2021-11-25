@@ -31,6 +31,7 @@
                     <a class="nav-link" href="data">Data</a>
                     <a class="nav-link" href="preprocessing">Preprocessing</a>
                     <a class="nav-link active" href="training">Training</a>
+                    <a class="nav-link" href="pengujian">Pengujian</a>
                 </div>
             </div>
         </div>

@@ -121,5 +121,12 @@ async def showContohDataTrainResidual():
     except Exception as e:
         print(f"kesalahan function API showDataTrainResidual: {e}")
 
+@app.get("/datasetlain")
+async def showOtherDataset():
+    try:
+        return preprocessing.showDatasetLain()
+    except Exception as e:
+        print(f"kesalahan function API showOtherDataset : {e}")
+
 if __name__ == "__main__":
     uvicorn.run("app:app", host="0.0.0.0", port=8005, reload=True)
