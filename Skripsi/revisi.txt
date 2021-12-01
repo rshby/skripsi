@@ -1,0 +1,2 @@
+dapat disimpulkan bahwa 
+1. algoritma XgBoost dapat digunakan untuk menyelesaikan permasalahan prediksi penyakit jantung. Model prediksi yang dihasilkan mendapat akurasi secara umum sebesar 
