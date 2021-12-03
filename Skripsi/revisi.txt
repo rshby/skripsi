@@ -1,2 +1,2 @@
 dapat disimpulkan bahwa 
-1. algoritma XgBoost dapat digunakan untuk menyelesaikan permasalahan prediksi penyakit jantung. Model prediksi yang dihasilkan mendapat akurasi secara umum sebesar 
+1. algoritma XgBoost dapat digunakan untuk menyelesaikan permasalahan prediksi penyakit jantung menggunakan data tabular yang terdiri dari 13 parameter. Model prediksi yang dihasilkan mendapat akurasi secara umum sebesar 90% dengan rincian akurasi pada data training adalah 91% dan akurasi pada data testing adalah 83% 
