@@ -1,2 +1,7 @@
 dapat disimpulkan bahwa 
-1. algoritma XgBoost dapat digunakan untuk menyelesaikan permasalahan prediksi penyakit jantung menggunakan data tabular yang terdiri dari 13 parameter. Model prediksi yang dihasilkan mendapat akurasi secara umum sebesar 90% dengan rincian akurasi pada data training adalah 91% dan akurasi pada data testing adalah 83% 
+1. algoritma XgBoost dapat digunakan untuk menyelesaikan permasalahan prediksi penyakit jantung menggunakan data tabular yang terdiri dari 13 parameter. Model prediksi yang dihasilkan mendapat akurasi secara umum sebesar 90% dengan rincian akurasi pada data training adalah 91% dan akurasi pada data testing adalah 83%.
+2. algoritma XGBoost yang digunakan di dalam penelitian ini juga dinilai dapat digunakan untuk mengatasi overfitting dan tetap mempertahankan akurasi yang tinggi. 
+
+saran:
+1. Berdasarkan penelitian yang ini yang menggunakan kombinasi beberapa hyper parameter, maka penelitian selanjutnya dapat dilakukan dengan menambahkan kombinasi tuning hyper parameter sehingga dapat memaksimalkan akurasi model yang dapat diperoleh.
+2. Dataset yang digunakan dalam penelitian selanjutnya dapat dilakukan dengan dataset lain ataupun dilakukan dengan menggabungkan dataset cleveland dan statelog, sehingga data yang digunakan akan semakin banyak dan dapat diharapkan model yang dibuat dapat memiliki akurasi yang lebih baik lagi.
